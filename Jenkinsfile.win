@@ -29,7 +29,7 @@ pipeline {
         }
         stage('CreateProject'){
             steps {
-                bat "${env.SAG_HOME}/IntegrationServer/instances/default/packages/WmDeployer/bin/projectautomator.bat C:/wM/CI_TEST/ProjectAutomator.xml"
+                bat "${env.SAG_HOME}/IntegrationServer/instances/default/packages/WmDeployer/bin/projectautomator.bat C:/wM/CI/ProjectAutomator.xml"
             }
         }
         stage('Deploy'){
